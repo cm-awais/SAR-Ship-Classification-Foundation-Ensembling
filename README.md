@@ -4,10 +4,10 @@ This repository contains a comprehensive benchmarking study of foundation models
 
 ## Overview
 
-The notebook evaluates and ensembles **7 state-of-the-art foundation models** on imbalanced SAR ship classification tasks, examining their performance across different class frequency groups and demonstrating ensemble methods to improve robustness.
+The notebook evaluates and ensembles **6 state-of-the-art foundation models** on imbalanced SAR ship classification tasks, examining their performance across different class frequency groups and demonstrating ensemble methods to improve robustness.
 
 ### Key Features
-- **Multi-model evaluation**: Benchmarks 7 foundation models including SAR-specific and general remote sensing models
+- **Multi-model evaluation**: Benchmarks 6 foundation models including SAR-specific and general remote sensing models
 - **Imbalance analysis**: Evaluates performance on frequent, medium, and rare ship classes
 - **Ensemble methods**: Implements embedding concatenation and logits fusion strategies
 - **Comprehensive metrics**: Reports accuracy, F1-macro, F1-weighted, precision, and recall per class
@@ -33,7 +33,7 @@ Two SAR ship classification benchmarks are used:
 - Highly imbalanced dataset reflecting real-world scenarios
 
 ### FuSARShip
-- **10 ship classes**: Cargo, Fishing, Bulk, Tanker, Container, Dredging, Tug, GeneralCargo, Passenger, and others
+- **9 ship classes**: Cargo, Fishing, Bulk, Tanker, Container, Dredging, Tug, GeneralCargo, and Passenger
 - Extended classification challenge with more fine-grained ship types
 
 ## Methodology
@@ -62,6 +62,7 @@ The notebook implements a **3-tier experimental framework**:
 1. Open the notebook in Google Colab:
    - Navigate to [Google Colab](https://colab.research.google.com/)
    - Upload `ensembling_foundation_models.ipynb` or open from GitHub
+   - Add datasets
 
 2. The notebook will automatically:
    - Install required dependencies (PyTorch, TorchGeo, TIMM, etc.)
@@ -69,7 +70,7 @@ The notebook implements a **3-tier experimental framework**:
    - Download and prepare datasets
 
 3. Run cells sequentially to:
-   - Load all 7 foundation models
+   - Load all 6 foundation models
    - Extract embeddings from SAR ship images
    - Train classifiers on individual and ensemble embeddings
    - Generate comprehensive evaluation metrics
