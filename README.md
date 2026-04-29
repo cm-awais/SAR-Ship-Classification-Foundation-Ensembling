@@ -22,6 +22,7 @@ The notebook evaluates the following models:
 4. **Prithvi-100M** - IBM-NASA geospatial foundation model
 5. **SAR-JEPA** - SAR domain-specific pretraining with Joint Embedding Predictive Architecture
 6. **SARDet-100K (MSFA)** - Multiscale Fourier Angular features for SAR detection
+7. **DinoV2** - General Purpose foundation model
 
 ## Datasets
 
